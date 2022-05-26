@@ -1,0 +1,29 @@
+@import '/src//styles/grid.scss';
+
+.App {
+  background-color: $grey;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h2 {
+  margin-top: 20px;
+  color: $greenLight;
+  font-size: 36px;
+  text-align: center;
+}
+
+.moreButton {
+  background-color: $greenLight;
+  border: none;
+  display: flex;
+  padding: 13px 35px;
+  align-items: center;
+  column-gap: 20px;
+  margin: 20px auto 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.activeAnimeBlockButton {
+}

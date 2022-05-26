@@ -1,0 +1,19 @@
+@import '/src/styles/grid.scss';
+
+.searchWidgetWrap {
+  background-color: $white;
+  padding: 15px 10px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  border-radius: 5px;
+  margin: 20px auto 0;
+
+  input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+}

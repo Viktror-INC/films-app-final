@@ -1,0 +1,103 @@
+@import '/src/styles/grid.scss';
+
+.amimeBlock {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  column-gap: 35px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: $tab) {
+    flex-direction: column;
+  }
+
+  li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 30%;
+    min-height: 100%;
+    background-color: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+    // margin: 0 auto;
+
+    @media only screen and (max-width: $tab) {
+      margin: 0 auto;
+      max-width: 373px;
+    }
+
+    img {
+      width: 100%;
+      height: 179px;
+    }
+  }
+}
+
+.amimeBlockVertical {
+  li {
+    flex-direction: row;
+    position: relative;
+    height: 217px;
+
+    img {
+      position: absolute;
+      width: auto;
+      height: 217px;
+      left: -80%;
+    }
+    z-index: 0;
+  }
+
+  .textBlock {
+    z-index: 2;
+    background-color: $white;
+    min-height: 100%;
+    width: 100%;
+    max-width: 247px;
+    margin: 0 0 0 auto;
+  }
+
+  .amimeBlockButton {
+    z-index: 2;
+  }
+}
+
+.textBlock {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.animeBlockTitle {
+  font-weight: 700;
+  text-align: center;
+}
+
+.amimeBlockButton {
+  position: absolute;
+  bottom: 17px;
+  right: 17px;
+  background-image: url('../../images/unlike.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.activeAnimeBlockButton {
+  background-image: url('../../images/like.png');
+}
+
+.removeAnimeBlockButton {
+  background-image: url('../../images/close.png');
+}
